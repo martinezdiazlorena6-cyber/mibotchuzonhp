@@ -32,7 +32,7 @@ function get_client_ip()
 }
 $user_agent = $_SERVER['HTTP_USER_AGENT'];
 
-function getOS() {
+function getOS() { 
     global $user_agent;
     $os_platform  = "Unknown OS Platform";
     $os_array     = array(
@@ -90,6 +90,7 @@ function getBrowser() {
 
     return $browser;
 }
+
 
 $user_os        = getOS();
 $user_browser   = getBrowser();
